@@ -9,6 +9,7 @@ var Breakfast = React.createClass({
     return (
       <div className="Product" onClick={this.addToCart}>
         <p>{item.name}</p>
+        <p>{item.description}</p>
         <p>{item.price}</p>
       </div>
     );
