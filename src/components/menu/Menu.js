@@ -8,6 +8,7 @@ export default class Menu extends Component {
     super(props);
 
     this.state = {
+      cart: [],
       breakfast: [
                   {id: 1, name: "Lemon Ricotta Pancakes", description: "Tender pancakes with lemon ricotta base. Topped with ghee and rasberry syrup.", price: 8.99},
                   {id: 2, name: "Egg Croissant", description: "Scrambled egg mixed with bacon, cheese, and chives. Served between our homemade croissant.", price: 7.49},
@@ -39,9 +40,11 @@ export default class Menu extends Component {
                  {id: 22, name: "Peanut Butter Sunday", description: "A bowl of vanilla ice cream topped with melted peanut butter.", price: 3.49},
                  {id: 23, name: "Pazookie", description: "Chocolate chip cookie base, topped with vanilla ice cream, whipped cream, and caramel syrup.", price: 3.49},
                  {id: 24, name: "French Apple Pie", description: "Apple pie with cinnamon crumble served with vanilla ice cream.", price: 3.49}
-               ],
-      cart: []
+               ]
     }
+
+    this.addToCart = this.addToCart.bind(this);
+
   } 
 
   addToCart(item) {
@@ -65,24 +68,25 @@ export default class Menu extends Component {
 
   render() {
     const breakfast = this.state.breakfast.map((item) => {
-      return <Item key={item.id} name={item.name} description={item.description} price={item.price} />
+      return <Item key={item.id} name={item.name} description={item.description} price={item.price} details={item} addToCart={this.addToCart}/>
     })
 
     const lunch = this.state.lunch.map((item) => {
-      return <Item key={item.id} name={item.name} description={item.description} price={item.price} />
+      return <Item key={item.id} name={item.name} description={item.description} price={item.price} details={item} addToCart={this.addToCart}/>
     })
     
     const dinner = this.state.dinner.map((item) => {
-      return <Item key={item.id} name={item.name} description={item.description} price={item.price} />
+      return <Item key={item.id} name={item.name} description={item.description} price={item.price} details={item} addToCart={this.addToCart}/>
     })
 
     const dessert = this.state.dessert.map((item) => {
-      return <Item key={item.id} name={item.name} description={item.description} price={item.price} />
+      return <Item key={item.id} name={item.name} description={item.description} price={item.price} details={item} addToCart={this.addToCart}/>
     })
 
     return (
       <div>
         <Header />
+        <Cart cart={this.state.cart} />
          <div className="Products"> 
            <h1 className="menu_title top">Breakfast</h1>
            <div className="menu">

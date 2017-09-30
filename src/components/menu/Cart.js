@@ -1,27 +1,18 @@
-import React from 'react';
+import React, {Component} from 'react';
+import cartImg from "../../cart_icon.png";
+import { Link } from 'react-router-dom';
 
-var Cart = React.createClass({
-  getInitialState: function() {
-    return {
-      open: false
-    }
-  },
-  openCart: function() {
-    this.setState({
-      open: !this.state.open
-    })
-  },
-  render: function() {
+export default class Menu extends Component {
+  
+  render() {
     return (
-      <div className={"Cart " + (this.state.open ? "Cart-Open" : "")} onClick={this.openCart} >
-        <p className="Title">Cart</p>
-        <div>
-        {this.props.cart.length > 0 ? this.props.cart.map((item) => {
-          return <p>{item.name}{item.quantity > 1 ? <span> {item.quantity}</span> : ''}</p> }) : <p>Empty</p>}
-        </div>
+      <div className="dropdown">
+        <Link to={"/Checkout"}><img className="cart_button dropbtn" src={cartImg}/></Link>
+      <div className="dropdown-content">
+        <a>{this.props.cart.length > 0 ? this.props.cart.map((item) => {
+          return <p>{item.name} {item.quantity > 1 ? <span> {item.quantity}</span> : ''}</p> }) : <p>Empty</p>}</a>
+      </div>
       </div>
     );
   }
-});
-
-export default Cart;
+}

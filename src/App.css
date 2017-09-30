@@ -12,7 +12,7 @@ body {
 }
 
 .top {
-  margin-top: 11%;
+  margin-top: 2%;
 }
 
 .header {
@@ -43,37 +43,26 @@ body {
   height: -10px;
   font-family: 'Lobster', Georgia, Times, serif;
   margin-bottom: 14px;
-  margin-left: -280px;
+  margin-left: -248px;
   padding-left: 8px;
   width: 800px;
 }
 
 .Cart {
-  min-width: 5px;
   padding: 1rem;
   color: black;
-  text-align: right;
+  text-align: center;
   overflow: hidden;
   max-height: 1.5rem;
   transition: all ease-out 0.2s;
+  margin-top: 65px;
+  margin-left: 730px;
+  font-family: baskerville;
+  font-weight: bold;
+  font-size: 20px;
+  background: rgba(0,0,0,0);
+  border: solid 2px #000000;
   
-  .Title, .Title::before {
-    font-weight: 700;
-    display: inline;
-  }
-  
-  .Title::before {
-    content: 'Open ';
-  }
-}
-
-.Cart-Open {
-  max-height: 10rem;
-  box-shadow: 0 0.2rem 3rem black;
-  
-    .Title::before {
-    content: 'Close ';
-  }
 }
 
 .menu {
@@ -100,6 +89,48 @@ body {
     font-weight: bold;
     font-size: 18px;
     font-family: lucida bright;
+}
+
+/* Dropdown Button */
+.dropbtn { 
+   cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, .9);
+    min-width: 250px;
+    z-index: 1;
+    margin-left: 775px;
+    border-radius: 20px;
+    border: solid 2px rgba(211, 211, 211, 1);
+    font-family: lucida bright;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.cart_button {
+  margin-top: 78px;
+  margin-left: 778px;
 }
 
 

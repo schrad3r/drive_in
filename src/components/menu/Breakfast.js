@@ -1,16 +1,17 @@
 import React from 'react';
 
-var Breakfast = React.createClass({
+var  = React.createClass({
   addToCart: function() {
     this.props.addToCart(this.props.details);
   },
   render: function() {
-    let item = this.props.details;
+    let item = this.props.details; 
     return (
       <div className="Product" onClick={this.addToCart}>
         <p>{item.name}</p>
         <p>{item.description}</p>
         <p>{item.price}</p>
+        <button >Add To Cart</button>
       </div>
     );
   }
