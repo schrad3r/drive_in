@@ -10,7 +10,7 @@ export default class Item extends Component {
         <p>{this.props.name}</p>
         <p>{this.props.description}</p>
         <p>{this.props.price}</p>
-        <button onClick={this.addToCart.bind(this)}>Add To Cart</button>
+        <button className="add_to_cart" onClick={this.addToCart.bind(this)}>Add To Cart</button>
       </div>
     )
   }

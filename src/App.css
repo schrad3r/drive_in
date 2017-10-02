@@ -16,36 +16,35 @@ body {
 }
 
 .header {
-  height: 45px;
-  margin-left: 512px !important;
+  background-color: #F5DEB3;
 }
-
-.border {
-  border: 6px solid black;
-  outline: 4px solid rgba(153, 204, 255, 1);
-  width: 300px;
-  text-align: center;
-}
-
 
 .header_button {
-  color: #000000;
   background: rgba(0,0,0,0);
-  border: solid 2px #000000;
+  border: none;
   margin: 5px 10px 5px 5px;
-  font-family: baskerville;
+  font-family: 'Josefin Slab', serif;
+  font-size: 25px;
   font-weight: bold;
-  font-size: 20px;
+}
+
+.header_buttons {
+  margin-left: 1000px;
+  margin-top: 35px;
+  margin-bottom: -50px;
+}
+
+.header_button:hover {
+  color: #0066CC;
 }
 
 .name {
-  font-size: 80px;
-  height: -10px;
-  font-family: 'Lobster', Georgia, Times, serif;
-  margin-bottom: 14px;
-  margin-left: -248px;
-  padding-left: 8px;
-  width: 800px;
+  font-size: 40px;
+  font-family: 'Josefin Slab', serif;
+  font-weight: bold;
+  margin-top: 1%;
+  margin-left: 20px;
+  margin-bottom: -75px;
 }
 
 .Cart {
@@ -89,6 +88,7 @@ body {
     font-weight: bold;
     font-size: 18px;
     font-family: lucida bright;
+    padding-bottom: 10px;
 }
 
 /* Dropdown Button */
@@ -131,6 +131,30 @@ body {
 .cart_button {
   margin-top: 78px;
   margin-left: 778px;
+
 }
 
+.add_to_cart {
+  margin-left: 150px;
+  background: rgba(0,0,0,0);
+  border: solid 2px #000000;
+  font-family: baskerville;
+  font-weight: bold;
+  font-size: 14px;
+}
 
+.home {
+  background-image: url('drive_through.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1000px;
+}
+
+.home_header {
+  padding-top: 50px;
+  text-align: center;
+  font-family: 'Cookie', cursive;
+  font-size: 90px;
+  font-weight: 100;
+}

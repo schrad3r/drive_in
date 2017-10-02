@@ -85,7 +85,7 @@ export default class Menu extends Component {
 
     return (
       <div>
-        <Header />
+        <Header cart={this.state.cart} />
         <Cart cart={this.state.cart} />
          <div className="Products"> 
            <h1 className="menu_title top">Breakfast</h1>
