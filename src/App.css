@@ -4,15 +4,16 @@ body {
 }
 
 .menu_title {
-  background-color: rgba(153, 204, 255, .9);
   color: black;
-  font-size: 50px;
-  font-family: baskerville;
-  padding-left: 30px;
+  font-size: 40px;
+  font-family: Baskerville;
+  text-align: center;
+  background-color: rgba(101, 140, 139, .9);
+  margin-top: -0.1%;
 }
 
 .top {
-  margin-top: 2%;
+  margin-top: 0.5%;
 }
 
 .header {
@@ -26,12 +27,13 @@ body {
   font-family: 'Josefin Slab', serif;
   font-size: 25px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .header_buttons {
-  margin-left: 1000px;
+  margin-left: 920px;
   margin-top: 35px;
-  margin-bottom: -50px;
+  margin-bottom: -45px;
 }
 
 .header_button:hover {
@@ -42,20 +44,17 @@ body {
   font-size: 40px;
   font-family: 'Josefin Slab', serif;
   font-weight: bold;
-  margin-top: 1%;
+  margin-top: 2%;
   margin-left: 20px;
   margin-bottom: -75px;
 }
 
 .Cart {
-  padding: 1rem;
   color: black;
   text-align: center;
   overflow: hidden;
   max-height: 1.5rem;
   transition: all ease-out 0.2s;
-  margin-top: 65px;
-  margin-left: 730px;
   font-family: baskerville;
   font-weight: bold;
   font-size: 20px;
@@ -68,27 +67,27 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    background-color: rgba(255,255,255,.8);
+    margin-top: -10px;
+    margin-bottom: 20px;
 }
 
 .Products {
-  background-image: url('food_colorless.png');
+  background-image: url('rustic_background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .Product {
-    padding: 5px 8px 5px 8px;
+    padding: 15px 15px 15px 15px;
     margin-top: 20px;
     width: 30%;
     border-radius: 30px;
-    cursor: pointer;
-    background-color: rgba(255, 255, 255, .9);
-    color: black;
-    font-weight: bold;
-    box-shadow: 2px 1px 9px rgba(153, 204, 255, 1);
     color: black;
     font-weight: bold;
     font-size: 18px;
-    font-family: lucida bright;
     padding-bottom: 10px;
+    font-family: baskerville;
 }
 
 /* Dropdown Button */
@@ -109,10 +108,11 @@ body {
     background-color: rgba(255, 255, 255, .9);
     min-width: 250px;
     z-index: 1;
-    margin-left: 775px;
     border-radius: 20px;
     border: solid 2px rgba(211, 211, 211, 1);
-    font-family: lucida bright;
+    font-family: 'Josefin Slab', serif;
+    font-weight: bold;
+    margin-left: 1020px;
 }
 
 /* Links inside the dropdown */
@@ -128,19 +128,22 @@ body {
     display: block;
 }
 
-.cart_button {
-  margin-top: 78px;
-  margin-left: 778px;
+.cart_button { 
+  margin-left: 1200px;
 
 }
 
 .add_to_cart {
-  margin-left: 150px;
   background: rgba(0,0,0,0);
   border: solid 2px #000000;
   font-family: baskerville;
   font-weight: bold;
   font-size: 14px;
+  cursor: pointer;
+}
+
+.add_to_cart:hover {
+  background-color: rgba(101, 140, 139, 1);
 }
 
 .home {
@@ -148,13 +151,46 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 1000px;
+  height: 600px;
 }
 
-.home_header {
+.page_header {
   padding-top: 50px;
   text-align: center;
   font-family: 'Cookie', cursive;
   font-size: 90px;
   font-weight: 100;
 }
+
+ .about_sub_header {
+  margin-top: 55px;
+  text-align: center;
+  font-family: 'Josefin Slab', serif;
+  font-size: 30px;
+  font-weight: bold;
+ }
+
+ .about_content {
+  text-align: center;
+  font-family: baskerville;
+  font-size: 28px;
+  font-weight: 400;
+  width: 500px;
+  margin-left: 390px;
+  margin-top: 55px;
+ }
+
+ .about_bottom_header {
+  text-align: center;
+  font-family: 'Cookie', cursive;
+  font-size: 60px;
+  font-weight: 100;
+ }
+
+ .about {
+  background-image: url('food_background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+ }
